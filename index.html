@@ -15,18 +15,46 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
-
-    <img id="dpi"
-     srcset="img/sizes/lego_320.png,
-             img/sizes/lego_480.png 1.5x,
-             img/sizes/lego_640.png 2x,
-             img/sizes/lego_960.png 3x"
-     src=“img/sizes/lego_640.png”
-     alt="Life size person built from grey Lego bricks standing
-          next to partially completed lego people">
 
   </header>
+  <section class="resp_img">
+    <picture>
+      <source srcset="images/museum-derivatives/museum-960.jpg,
+              images/museum-derivatives/museum-1920.jpg 2x,
+              images/museum-derivatives/museum-2880.jpg 3x" media="(min-width:960px)">
+
+      <source srcset="images/museum-derivatives/museum-720.jpg,
+              images/museum-derivatives/museum-1440.jpg 2x,
+              images/museum-derivatives/museum-2160.jpg 3x" media="(min-width:720px)">
+
+      <source srcset="images/museum-derivatives/museum-480.jpg,
+              images/museum-derivatives/museum-960.jpg 2x,
+              images/museum-derivatives/museum-1440.jpg 3x" media="(min-width:480px)">
+
+      <source srcset="images/museum-derivatives/museum-320.jpg,
+              images/museum-derivatives/museum-640.jpg 2x,
+              images/museum-derivatives/museum-960.jpg 3x" media="(min-width:320px)">
+              
+      <img src="images/museum-derivatives/museum-960.jpg" alt="Image of a museum.">
+    </picture>
+
+    <picture>
+      <source srcset="images/museum square-derivatives/museum square-800.jpg,
+              images/museum square-derivatives/museum square-1600.jpg 2x,
+              images/museum square-derivatives/museum square-2400.jpg 3x" media="(min-width:1600px)">
+
+      <source srcset="images/museum square-derivatives/museum square-640.jpg,
+              images/museum square-derivatives/museum square-1280.jpg 2x,
+              images/museum square-derivatives/museum square-1920.jpg 3x" media="(min-width:1280px)">
+
+      <source srcset="images/museum square-derivatives/museum square-480.jpg,
+              images/museum square-derivatives/museum square-960.jpg 2x,
+              images/museum square-derivatives/museum square-1440.jpg 3x" media="(min-width:960px)">
+
+              
+      <img src="images/museum square-derivatives/museum square-1280.jpg" alt="Image of a museum.">
+    </picture>
+  </section>
 </body>
 
 </html>
